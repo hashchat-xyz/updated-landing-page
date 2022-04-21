@@ -1,0 +1,38 @@
+* {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #282828;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 30px;
+  margin-right: 30px;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 500px;
+}
+
+h3 {
+  font-size: 100px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+h5 span {
+  font-weight: bolder;
+  color: #00bfff;
+}
