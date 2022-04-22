@@ -1,5 +1,10 @@
-const hash = document.querySelector(".hashchat");
-const description = document.querySelector(".description");
+const hash = document.querySelector(".top-container");
+const l1 = document.querySelector(".l1");
+const l2 = document.querySelector(".l2");
+const l3 = document.querySelector(".l3");
+const l4 = document.querySelector(".l4");
+
+// Encryption animation work.
 
 const alphabet = [
   "a",
@@ -39,24 +44,54 @@ const alphabet = [
   9,
 ];
 
-// Encryption animation
-
-hash.addEventListener("mouseover", function test() {
+function animation() {
   for (i = 0; i < 5; i++) {
     let randomIndex1 = Math.floor(Math.random() * alphabet.length);
     let randomIndex2 = Math.floor(Math.random() * alphabet.length);
     let randomIndex3 = Math.floor(Math.random() * alphabet.length);
     let randomIndex4 = Math.floor(Math.random() * alphabet.length);
-    let y =
-      alphabet[randomIndex1] +
-      alphabet[randomIndex2] +
-      alphabet[randomIndex3] +
-      alphabet[randomIndex4];
 
-    hash.innerHTML = `${y}`;
-    console.log(y);
+    let a = alphabet[randomIndex1];
+    let b = alphabet[randomIndex2];
+    let c = alphabet[randomIndex3];
+    let d = alphabet[randomIndex4];
+
+    l1.innerHTML = `${a}`;
+    l2.innerHTML = `${b}`;
+    l3.innerHTML = `${c}`;
+    l4.innerHTML = `${d}`;
   }
-  requestAnimationFrame(test);
+  requestAnimationFrame(animation);
+}
+
+function stopAnimation() {}
+
+hash.addEventListener("mouseover", function (e) {
+  if ((MouseEvent = true)) {
+    return stopAnimation();
+  }
 });
 
 // Description cycles
+
+const description = document.querySelector(".description");
+
+const descriptions = [
+  "communities",
+  "DAOs",
+  "NFT owners",
+  "token holders",
+  "bag shillers",
+  "speculatoooors",
+  "artists",
+  "friends",
+];
+
+description.addEventListener("mouseover", function descriptionCycles() {
+  arrayLength = descriptions.length;
+  for (i = 0; i < arrayLength - 1; i++) {
+    let z = descriptions[i];
+    description.innerHTML = `${z}`;
+  }
+  console.log(setInterval(descriptionCycles(), 2000));
+});
