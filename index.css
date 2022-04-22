@@ -8,7 +8,7 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  cursor: url(/img/key.svg), auto;
+  cursor: url(./img/key.svg), auto;
 }
 
 .navbar {
@@ -23,6 +23,18 @@ body {
   justify-content: right;
   gap: 20px;
   width: 100%;
+}
+
+.twitter {
+  cursor: url(./img/twitter.svg), auto;
+}
+
+.discord {
+  cursor: url(./img/discord.svg), auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 main {
