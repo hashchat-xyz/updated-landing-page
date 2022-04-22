@@ -5,6 +5,7 @@ const l3 = document.querySelector(".l3");
 const l4 = document.querySelector(".l4");
 
 // Encryption animation work.
+var startstop = 1;
 
 const alphabet = [
   "a",
@@ -62,7 +63,7 @@ function animation() {
     l4.innerHTML = `${d}`;
   }
 
-  if (/* something to detech if haschat has been moused over*/) {
+  if (startstop == 0) {
     console.log("stop animation");
   } else {
     requestAnimationFrame(animation);
@@ -73,9 +74,10 @@ function animation() {
 //   window.cancelAnimationFrame();
 // }
 
-// hash.addEventListener("mouseover", function () {
-//   window.cancelAnimationFrame;
-// });
+hash.addEventListener("mouseover", function () {
+  startstop=0;
+  window.cancelAnimationFrame;
+});
 
 // Description cycles
 
