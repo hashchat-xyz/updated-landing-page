@@ -5,6 +5,7 @@ const l3 = document.querySelector(".l3");
 const l4 = document.querySelector(".l4");
 
 // Encryption animation work.
+var startstop = 1;
 
 const alphabet = [
   "a",
@@ -61,37 +62,85 @@ function animation() {
     l3.innerHTML = `${c}`;
     l4.innerHTML = `${d}`;
   }
-  requestAnimationFrame(animation);
+
+  if (startstop == 0) {
+    console.log("Thanks for playing :)");
+  } else {
+    requestAnimationFrame(animation);
+  }
 }
 
-function stopAnimation() {}
-
-hash.addEventListener("mouseover", function (e) {
-  if ((MouseEvent = true)) {
-    return stopAnimation();
-  }
+hash.addEventListener("mouseover", function () {
+  l1.innerHTML = `H`;
+  l2.innerHTML = `a`;
+  l3.innerHTML = `s`;
+  l4.innerHTML = `h`;
+  startstop = 0;
+  window.cancelAnimationFrame;
 });
 
-// Description cycles
+// Description cycle work.
 
 const description = document.querySelector(".description");
 
 const descriptions = [
-  "communities",
-  "DAOs",
-  "NFT owners",
-  "token holders",
-  "bag shillers",
-  "speculatoooors",
-  "artists",
-  "friends",
+  "DAOs.",
+  "NFT owners.",
+  "token holders.",
+  "bag shillers.",
+  "speculatoooors.",
+  "artists.",
+  "friends.",
 ];
 
-description.addEventListener("mouseover", function descriptionCycles() {
-  arrayLength = descriptions.length;
-  for (i = 0; i < arrayLength - 1; i++) {
-    let z = descriptions[i];
-    description.innerHTML = `${z}`;
+// description.addEventListener("click", function () {
+//   let randomIndex5 = Math.floor(Math.random() * descriptions.length);
+//   let descriptionCycle = descriptions[randomIndex5];
+//   description.innerHTML = descriptionCycle;
+// });
+
+// let clickCount = -1;
+
+// description.addEventListener("click", function () {
+//   clickCount++;
+//   // console.log(clickCount);
+//   if (clickCount == 0) {
+//     description.innerHTML = `${descriptions[0]}`;
+//   } else if (clickCount == 1) {
+//     description.innerHTML = `${descriptions[1]}`;
+//   } else if (clickCount == 2) {
+//     description.innerHTML = `${descriptions[2]}`;
+//   } else if (clickCount == 3) {
+//     description.innerHTML = `${descriptions[3]}`;
+//   } else if (clickCount == 4) {
+//     description.innerHTML = `${descriptions[4]}`;
+//   } else if (clickCount == 5) {
+//     description.innerHTML = `${descriptions[5]}`;
+//   } else if (clickCount == 6) {
+//     description.innerHTML = `${descriptions[6]}`;
+//   } else if (clickCount == 7) {
+//     description.innerHTML = `${descriptions[7]}`;
+//   } else {
+//     let clickCount = -1;
+//   }
+// });
+
+description.addEventListener("click", function () {
+  if (description.innerHTML == "communities.") {
+    description.innerHTML = `${descriptions[0]}`;
+  } else if (description.innerHTML == "DAOs.") {
+    description.innerHTML = `${descriptions[1]}`;
+  } else if (description.innerHTML == "NFT owners.") {
+    description.innerHTML = `${descriptions[2]}`;
+  } else if (description.innerHTML == "token holders.") {
+    description.innerHTML = `${descriptions[3]}`;
+  } else if (description.innerHTML == "bag shillers.") {
+    description.innerHTML = `${descriptions[4]}`;
+  } else if (description.innerHTML == "speculatoooors.") {
+    description.innerHTML = `${descriptions[5]}`;
+  } else if (description.innerHTML == "artists.") {
+    description.innerHTML = `${descriptions[6]}`;
+  } else {
+    description.innerHTML = `communities.`;
   }
-  console.log(setInterval(descriptionCycles(), 2000));
 });
