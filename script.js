@@ -64,18 +64,18 @@ function animation() {
   }
 
   if (startstop == 0) {
-    console.log("stop animation");
+    console.log("Thanks for playing :)");
   } else {
     requestAnimationFrame(animation);
   }
 }
 
-// function stopAnimation() {
-//   window.cancelAnimationFrame();
-// }
-
 hash.addEventListener("mouseover", function () {
-  startstop=0;
+  l1.innerHTML = `H`;
+  l2.innerHTML = `a`;
+  l3.innerHTML = `s`;
+  l4.innerHTML = `h`;
+  startstop = 0;
   window.cancelAnimationFrame;
 });
 
