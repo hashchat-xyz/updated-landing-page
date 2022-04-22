@@ -61,37 +61,42 @@ function animation() {
     l3.innerHTML = `${c}`;
     l4.innerHTML = `${d}`;
   }
-  requestAnimationFrame(animation);
+
+  if (/* something to detech if haschat has been moused over*/) {
+    console.log("stop animation");
+  } else {
+    requestAnimationFrame(animation);
+  }
 }
 
-function stopAnimation() {}
+// function stopAnimation() {
+//   window.cancelAnimationFrame();
+// }
 
-hash.addEventListener("mouseover", function (e) {
-  if ((MouseEvent = true)) {
-    return stopAnimation();
-  }
-});
+// hash.addEventListener("mouseover", function () {
+//   window.cancelAnimationFrame;
+// });
 
 // Description cycles
 
-const description = document.querySelector(".description");
+// const description = document.querySelector(".description");
 
-const descriptions = [
-  "communities",
-  "DAOs",
-  "NFT owners",
-  "token holders",
-  "bag shillers",
-  "speculatoooors",
-  "artists",
-  "friends",
-];
+// const descriptions = [
+//   "communities",
+//   "DAOs",
+//   "NFT owners",
+//   "token holders",
+//   "bag shillers",
+//   "speculatoooors",
+//   "artists",
+//   "friends",
+// ];
 
-description.addEventListener("mouseover", function descriptionCycles() {
-  arrayLength = descriptions.length;
-  for (i = 0; i < arrayLength - 1; i++) {
-    let z = descriptions[i];
-    description.innerHTML = `${z}`;
-  }
-  console.log(setInterval(descriptionCycles(), 2000));
-});
+// description.addEventListener("mouseover", function descriptionCycles() {
+//   arrayLength = descriptions.length;
+//   for (i = 0; i < arrayLength - 1; i++) {
+//     let z = descriptions[i];
+//     description.innerHTML = `${z}`;
+//   }
+//   console.log(setInterval(descriptionCycles(), 2000));
+// });
