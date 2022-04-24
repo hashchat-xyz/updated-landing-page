@@ -71,12 +71,13 @@ function animation() {
 }
 
 hash.addEventListener("mouseover", function () {
+  startstop = 0;
+  window.cancelAnimationFrame;
+  (async () => await new Promise(resolve => setTimeout(resolve, 10)))();
   l1.innerHTML = `H`;
   l2.innerHTML = `a`;
   l3.innerHTML = `s`;
   l4.innerHTML = `h`;
-  startstop = 0;
-  window.cancelAnimationFrame;
 });
 
 window.onload = animation();
