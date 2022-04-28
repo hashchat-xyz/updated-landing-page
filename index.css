@@ -25,7 +25,7 @@ body {
 
 .community {
   width: 250px;
-  animation-duration: 1s;
+  animation-duration: 750ms;
   animation-name: change-color;
   animation-iteration-count: infinite;
   animation-direction: alternate;
