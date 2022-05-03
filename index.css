@@ -15,6 +15,31 @@ body {
   position: fixed;
   padding: 30px;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.community {
+  width: 250px;
+  animation-duration: 750ms;
+  animation-name: change-color;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-weight: bold;
+}
+
+@keyframes change-color {
+  from {
+    color: #00bfff;
+  }
+
+  to {
+    color: white;
+  }
 }
 
 .navbar-list {
@@ -41,7 +66,7 @@ main {
   height: 100%;
   width: 100%;
   display: flex;
-
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -76,14 +101,6 @@ main {
   justify-content: center;
 }
 
-.haschat {
-  text-align: start;
-}
-
-.haschat {
-  text-align: end;
-}
-
 h3 {
   font-size: 100px;
 }
@@ -113,11 +130,15 @@ h5 span {
     font-size: 20px;
   }
 
-  .main-container {
+  .top-middle-container {
     padding: 10px;
   }
 
-  .bottom-container {
+  .middle-container {
     display: flex;
+  }
+
+  .community {
+    width: 0px;
   }
 }
