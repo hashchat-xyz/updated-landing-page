@@ -58,6 +58,10 @@ body {
   cursor: url(./img/discord.svg), auto;
 }
 
+.jobs {
+  cursor: url(./img/hammer.svg), auto;
+}
+
 a {
   text-decoration: none;
 }
