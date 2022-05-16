@@ -122,12 +122,12 @@ h5 span {
   font-size: 25px;
 }
 
-.call-to-action {
+/* .call-to-action {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-}
+} */
 
 .open-app {
   font-size: 18px;
@@ -146,6 +146,7 @@ h5 span {
   h5 {
     font-size: 15px;
     display: inline-block !important;
+    width: 350px;
   }
   h5 span {
     font-size: 20px;
@@ -153,6 +154,20 @@ h5 span {
 
   .top-middle-container {
     padding: 10px;
+  }
+
+  .top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-container {
+    width: 42%;
+  }
+
+  .right-container {
+    width: 40%;
   }
 
   .middle-container {
